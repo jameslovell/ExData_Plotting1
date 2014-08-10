@@ -1,3 +1,17 @@
+## Programming Notes
+As directed, this repository was forked from the instructor's <a href="https://github.com/rdpeng/ExData_Plotting1">github repo</a>. 
+This README is only modified in this section to include notes as to what was done.
+
+I created an R script to load and subset the data since this is a function that is needed in all four required scripts. This script is called "load_data.R".
+This script is sourced and its lone method, load_data() is called at the beginning of each of the required scripts.
+load_data(), in addition to subsetting the data, sets the data types for the features in the data frame. Date is changed to include the timestamp,
+and both Date and Time are set as type Date. The remaining columns are set as numeric types.
+Finally, the na string is set as "?" as the instructions indicate.
+
+plot1.R, plot2.R, plot3.R, and plot4.R each load the data using load_data() and construct the desired 480X480 png file. Executing each of these
+scripts in turn produces its respective png file. 
+for example: <pre>Rscript plot1.R</pre>
+
 ## Introduction
 
 This assignment uses data from
